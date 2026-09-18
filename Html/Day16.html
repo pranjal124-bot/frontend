@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-top: 70px solid #20252d;
+            padding: 30px 40px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .green {
+            color: #39968b;
+        }
+
+        .description {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 17px;
+            color: #333;
+            border-bottom: 2px solid #39968b;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .date-registration {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .date-registration input {
+            width: 35px;
+        }
+
+        .row {
+            display: flex;
+            gap: 40px;
+            margin: 10px 0;
+        }
+
+        .field {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .field label {
+            width: 120px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            height: 24px;
+            border: 1px solid #ccc;
+            padding: 4px;
+            flex: 1;
+        }
+
+        .full {
+            width: 100%;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gender input {
+            flex: none;
+            width: 18px;
+            height: 18px;
+        }
+
+        .gender label {
+            width: auto;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .small-input {
+            width: 35px;
+            flex: none;
+            margin-right: 5px;
+        }
+
+        .address-section {
+            margin-top: 30px;
+        }
+
+        .signature {
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .signature div {
+            border-top: 1px solid #777;
+            width: 150px;
+            text-align: center;
+            padding-top: 8px;
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            border-bottom: 5px solid #39968b;
+            padding-bottom: 20px;
+        }
+
+        @media(max-width: 700px) {
+            body {
+                padding: 10px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .field {
+                width: 100%;
+            }
+
+            .signature {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Registration <span class="green">Form</span></h1>
+
+    <p class="description">
+        This space is where you can share information on the section,
+        such as: topic discussion, goals and activities.
+    </p>
+
+    <div class="date-registration">
+        <b>DATE OF REGISTRATION</b><br><br>
+        <input class="small-input" type="text">
+        <input class="small-input" type="text"> /
+        <input class="small-input" type="text">
+        <input class="small-input" type="text"> /
+        <input class="small-input" type="text">
+        <input class="small-input" type="text">
+    </div>
+
+    <h2>PERSONAL INFORMATION</h2>
+
+    <!-- Full Name -->
+    <div class="row">
+        <div class="field">
+            <label>Full Name :</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <!-- Row -->
+    <div class="row">
+
+        <div class="field">
+            <label>Nickname :</label>
+            <input type="text">
+        </div>
+
+        <div class="field">
+            <label>Place Of Birth :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <!-- Date of Birth / Nationality -->
+    <div class="row">
+
+        <div class="field">
+            <label>Date of Birth :</label>
+
+            <input class="small-input" type="text">
+            <input class="small-input" type="text"> /
+            <input class="small-input" type="text">
+            <input class="small-input" type="text"> /
+            <input class="small-input" type="text">
+            <input class="small-input" type="text">
+        </div>
+
+        <div class="field">
+            <label>Nationality :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="field">
+            <label>Email :</label>
+            <input type="email">
+        </div>
+
+        <div class="field">
+            <label>Domicile :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <!-- Gender -->
+    <div class="row">
+
+        <div class="field">
+            <label>Gender :</label>
+
+            <div class="gender">
+
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+
+            </div>
+        </div>
+
+        <div class="field">
+            <label>CP Domicile :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="field">
+            <label>Marital Status :</label>
+            <input type="text">
+        </div>
+
+        <div class="field">
+            <label>Start Time :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="field">
+            <label>Country :</label>
+            <input type="text">
+        </div>
+
+        <div class="field">
+            <label>Post Code :</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="field">
+            <label>National Id No :</label>
+            <input type="text">
+        </div>
+
+        <div class="field">
+            <label>Phone :</label>
+            <input type="tel">
+        </div>
+
+    </div>
+
+
+    <!-- ADDRESS -->
+
+    <div class="address-section">
+
+        <h2>ADDRESS</h2>
+
+        <div class="row">
+            <div class="field">
+                <label>Present Address :</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="field">
+                <label>The City :</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Present State :</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="field">
+                <label>Zip Code :</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Student Trustee :</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SIGNATURE -->
+
+    <div class="signature">
+
+        <div>Register Signature</div>
+        <div>Officer Signature</div>
+
+    </div>
+
+    <div class="footer">
+        <h3 style="text-align:right;">
+            THANK YOU <span class="green">FOR REGISTRATION</span>
+        </h3>
+
+        <p style="text-align:right; font-size:12px;">
+            Write your conclusions here. You can add details or examples
+            to help your reader along.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+div{
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    font-size: larger;
+    color: blue;
+   margin: 30px;
+   padding-left: 40px;
+   background-image: url("IMG20260302110942.jpg");
+   display: inline-block;
+   background-size: cover;
+
+
+}

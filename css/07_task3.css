@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+    height: 600px;
+    margin: 50px;
+    padding: 10px;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+
+    border: 5px dotted black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    transition: 0.5s;
+    
+}
+
+
+
+
+.box1 {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.box2 {
+    top: 130px;
+    left: 100px;
+    background-color: blue;
+}
+
+.box3 {
+    top: 240px;
+    left: 200px;
+    background-color: green;
+    
+}
+
+.box4 {
+    top: 350px;
+    left: 300px;
+    background-color: orange;
+}
+
+.box5 {
+    top: 480px;
+    left: 400px;
+    background-color: purple;
+   
+}
+
+
+
+
+.box:hover {
+    transform: scale(1.2) rotate(180deg);
+}

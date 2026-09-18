@@ -1,0 +1,52 @@
+.chart {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #FFD966 0deg 43deg,
+        #F4B183 43deg 93deg,
+        #A9D18E 93deg 229deg,
+        #9DC3E6 229deg 301deg,
+        #C9B1FF 301deg 344deg,
+        #F8CBAD 344deg 360deg
+    );
+
+    position: relative;
+}
+
+/* Common */
+.data {
+    position: absolute;
+    text-align: center;
+}
+
+/* 0 - 35 */
+.data1 {
+    top: 76px;
+    left: 270px;
+}
+
+/* 35 - 55 */
+.data2 {
+    top: 180px;
+    right: 30px;
+}
+
+/* 55 - 75 */
+.data3 {
+    bottom: 100px;
+    right: 70px;
+}
+
+/* 76 - 90 */
+.data4 {
+    bottom: 180px;
+    left: 40px;
+}
+
+/* 91 - 100 */
+.data5 {
+    top: 100px;
+    left: 60px;
+}

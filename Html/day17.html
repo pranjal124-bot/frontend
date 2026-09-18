@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Registration Form</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #eee;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border: 1px solid #555;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .top-text {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .box {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 7px;
+        }
+
+        .field {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .field label {
+            width: 120px;
+            font-size: 12px;
+        }
+
+        input {
+            height: 25px;
+            border: 1px solid #aaa;
+            flex: 1;
+            padding: 4px;
+        }
+
+        .small {
+            width: 70px;
+            flex: none;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .gender input {
+            width: 15px;
+            flex: none;
+        }
+
+        .gender label {
+            width: auto;
+            cursor: pointer;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 19px;
+            margin: 12px 0;
+        }
+
+        .relationship {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .relationship input {
+            width: 15px;
+            flex: none;
+        }
+
+        .relationship label {
+            cursor: pointer;
+        }
+
+        @media(max-width: 700px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .field {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Welcome to our office!</h1>
+
+    <p class="top-text">
+        Please fill out this form as completely as possible and return it to the desk.
+    </p>
+
+
+    <!-- PATIENT INFORMATION -->
+
+    <div class="box">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Name of Doctor you wish to see</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Today's Date</label>
+                <input type="date">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Address</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Home Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+        
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Apt.#</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+
+                <div class="gender">
+
+                    <input type="radio" id="male2" name="gender2">
+                    <label for="male2">Male</label>
+
+                    <input type="radio" id="female2" name="gender2">
+                    <label for="female2">Female</label>
+
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label>Cell Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>State</label>
+                <input class="small" type="text">
+            </div>
+
+            <div class="field">
+                <label>Zip Code</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Work Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+
+            <div class="field">
+                <label>SSN</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Fax Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Primary Care Physician</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Previous Eye Doctor</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Last Eye Exam</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Referred By</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VISION INSURANCE -->
+
+    <h2 class="section-title">
+        Vision Insurance Information
+    </h2>
+
+    <div class="box">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Insurance</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Card Number or ID#</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Cardholder</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Group Number</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Address</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Apt.#</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>State</label>
+                <input class="small" type="text">
+            </div>
+
+            <div class="field">
+                <label>Zip Code</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+
+        </div>
+
+
+        <div class="relationship">
+
+            <b>Relationship to Insured:</b>
+
+            <input type="radio" id="child1" name="relation1">
+            <label for="child1">Child</label>
+
+            <input type="radio" id="spouse1" name="relation1">
+            <label for="spouse1">Spouse</label>
+
+            <input type="radio" id="other1" name="relation1">
+            <label for="other1">Other</label>
+
+        </div>
+
+    </div>
+
+
+    <!-- MEDICAL INSURANCE -->
+
+    <h2 class="section-title">
+        Medical Insurance Information
+    </h2>
+
+    <div class="box">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Insurance</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Card Number or ID#</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Cardholder</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Group Number</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Address</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Apt.#</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>State</label>
+                <input class="small" type="text">
+            </div>
+
+            <div class="field">
+                <label>Zip Code</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+
+        </div>
+
+
+        <div class="relationship">
+
+            <b>Relationship to Insured:</b>
+
+            <input type="radio" id="child2" name="relation2">
+            <label for="child2">Child</label>
+
+            <input type="radio" id="spouse2" name="relation2">
+            <label for="spouse2">Spouse</label>
+
+            <input type="radio" id="other2" name="relation2">
+            <label for="other2">Other</label>
+
+        </div>
+
+    </div>
+
+
+    <!-- EXTRA INFORMATION -->
+
+    <div class="box" style="margin-top:10px;">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Occupation</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Sports/Hobbies</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Emergency Contact</label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

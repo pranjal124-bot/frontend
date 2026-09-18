@@ -1,0 +1,17 @@
+        .chart {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+        border: 8px solid rgba(0, 0, 0, 0.6);
+
+            background: conic-gradient(
+                rgb(104, 238, 104) 0deg 32deg,
+                rgb(231, 231, 50) 32deg 75deg,
+                rgb(102, 184, 211) 75deg 210deg,
+                rgb(231, 169, 54) 210deg 282deg,
+                rgba(128, 128, 128, 0.592) 282deg 347deg,
+                rgba(255, 182, 193, 0.777) 347deg 360deg
+            );
+
+            
+        }
